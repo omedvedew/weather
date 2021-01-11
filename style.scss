@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.hidden {
+    display: none;
+}
+
 .container {
 
     display: flex;
@@ -48,7 +52,10 @@
 
         .input {
             display: flex;
+            flex-direction: column;
             position: relative;
+            top: 75px;
+            left: 75px;
 
             .input-field {
                 color:  rgb(0, 0, 150);
@@ -57,7 +64,8 @@
                 border-radius: 5px;
                 background-color: rgba($color: #fff, $alpha: 0.9);
                 font-size: 16px; 
-                line-height: 27px;               
+                line-height: 27px; 
+                margin-top: 5px;              
             }
 
             .input-field:focus {
@@ -76,7 +84,7 @@
                 border-radius: 3px;
                 position: absolute;
                 right: 3px;
-                top: 3px;
+                top: 27px;
                 padding: 0;
             }
         }

@@ -101,8 +101,21 @@ function getValue() {
         let currentYear = currentDate.getFullYear();
 
         let currentHour = currentDate.getHours();
-        let currentMinute = 0 + currentDate.getMinutes();
-        let currentSecond = 0 + currentDate.getSeconds();
+        let currentMin = 0 + currentDate.getMinutes();
+        let currentMinute;
+        if (currentMin < 10) {
+            currentMinute = "0" + currentMin;
+        } else {
+            currentMinute = currentMin;
+        };
+
+        let currentSec = 0 + currentDate.getSeconds();
+        let currentSecond;
+        if (currentSec < 10) {
+            currentSecond = "0" + currentSec;
+        } else {
+            currentSecond = currentSec;
+        };
 
         // date
         let date = document.querySelector(".date");
@@ -165,6 +178,9 @@ function getValue() {
         weatherIconImg.setAttribute("src", weatherIconUrl);
         weatherImg.append(weatherIconImg);
     });
+
+    document.getElementById("input").classList.toggle("hidden");
+    document.getElementById("input").classList.remove("input");
 
 };
 

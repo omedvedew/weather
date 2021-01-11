@@ -3,6 +3,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +51,10 @@
 }
 .container .section-1 .input {
   display: flex;
+  flex-direction: column;
   position: relative;
+  top: 75px;
+  left: 75px;
 }
 .container .section-1 .input .input-field {
   color: #000096;
@@ -57,6 +64,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   line-height: 27px;
+  margin-top: 5px;
 }
 .container .section-1 .input .input-field:focus {
   outline: none;
@@ -73,7 +81,7 @@
   border-radius: 3px;
   position: absolute;
   right: 3px;
-  top: 3px;
+  top: 27px;
   padding: 0;
 }
 .container .section-1 .city {
