@@ -1,0 +1,126 @@
+@import './mixin.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(to top right, rgb(100, 130, 255), rgb(0, 0, 150));
+    margin: 0 auto;
+    color: white;
+    padding: 20px;
+
+    .section-1, .section-2 {
+        display: flex;
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 40%;
+    }
+
+    .section-3, .section-4 {
+        display: flex;
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 60%;
+        flex-direction: column;
+    }
+
+    .section-1 {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .date {
+            @include alignContent;
+        };
+
+        .time {
+            @include alignContent;
+            font-weight: bold;
+            font-size: 24px
+        };
+
+        .city {
+            @include alignContent;
+        }
+
+    };
+
+    .section-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            display: block;
+            height: 75px;
+            width: 75px;
+        }
+    }
+
+    .section-3 {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .humidity {
+            @include alignContent;
+        }
+
+        .pressure {
+            @include alignContent;
+        }
+
+        .wind {
+            margin-top: 15px;
+            @include alignContent;
+        }
+    }
+
+    .section-4 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .temp {
+            display: flex;
+            margin: 5px 0px 5px 0px;
+            font-weight: bold;
+            font-size: 24px;
+
+            :nth-child(2) {
+                display: flex;                
+                width: 5px;
+                height: 5px;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+        }
+
+        .feels-like-temp {
+           display: flex;
+           margin: 5px 0px 5px 0px;
+
+            :nth-child(2) {
+                display: flex;                
+                width: 5px;
+                height: 5px;
+                border: 1px solid white;
+                border-radius: 50%;
+            }
+        }
+
+        .cloudness {
+            display: flex;
+            margin: 5px 0px 5px 0px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}

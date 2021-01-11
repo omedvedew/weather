@@ -1,0 +1,6 @@
+@mixin alignContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0px 5px 0px;
+};

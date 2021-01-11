@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(to top right, #6482ff, #000096);
+  margin: 0 auto;
+  color: white;
+  padding: 20px;
+}
+.container .section-1, .container .section-2 {
+  display: flex;
+  flex: 0 0 50%;
+  max-width: 50%;
+  height: 40%;
+}
+.container .section-3, .container .section-4 {
+  display: flex;
+  flex: 0 0 50%;
+  max-width: 50%;
+  height: 60%;
+  flex-direction: column;
+}
+.container .section-1 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container .section-1 .date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0px 5px 0px;
+}
+.container .section-1 .time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0px 5px 0px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.container .section-1 .city {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0px 5px 0px;
+}
+.container .section-2 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .section-2 img {
+  display: block;
+  height: 75px;
+  width: 75px;
+}
+.container .section-3 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container .section-3 .humidity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0px 5px 0px;
+}
+.container .section-3 .pressure {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0px 5px 0px;
+}
+.container .section-3 .wind {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0px 5px 0px;
+}
+.container .section-4 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .section-4 .temp {
+  display: flex;
+  margin: 5px 0px 5px 0px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.container .section-4 .temp :nth-child(2) {
+  display: flex;
+  width: 5px;
+  height: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.container .section-4 .feels-like-temp {
+  display: flex;
+  margin: 5px 0px 5px 0px;
+}
+.container .section-4 .feels-like-temp :nth-child(2) {
+  display: flex;
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.container .section-4 .cloudness {
+  display: flex;
+  margin: 5px 0px 5px 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
