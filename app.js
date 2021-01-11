@@ -14,13 +14,13 @@ function getValue() {
         // humidity
         let humidityValue = document.createElement("div");
         let humidity = document.querySelector(".humidity");
-        humidityValue.textContent = ": " + json.main.humidity + "%";
+        humidityValue.textContent = "Humidity: " + json.main.humidity + "%";
         humidity.append(humidityValue);
 
         // pressure
         let pressureValue = document.createElement("div");
         let pressure = document.querySelector(".pressure");
-        pressureValue.textContent = ": " + json.main.pressure + " hPa";
+        pressureValue.textContent = "Pressure: " + json.main.pressure + " hPa";
         pressure.append(pressureValue);
 
         // wind
@@ -61,7 +61,7 @@ function getValue() {
         } else if (windDirectionDeg > 326.25 && windDirectionDeg < 348.75) {
             windDirection = "NNW"
         };
-        windValue.textContent = ": " + json.wind.speed + " km/s " + windDirection;
+        windValue.textContent = "Wind : " + json.wind.speed + " km/s " + windDirection;
         wind.append(windValue);
 
         // DATE & TIME
@@ -132,7 +132,7 @@ function getValue() {
         let degreeIcon2 = document.createElement("div");
         let degree2 = document.createElement("div");
         degree2.textContent = "C";
-        feelsLikeValue.textContent = ":" + Math.floor(json.main.feels_like);
+        feelsLikeValue.textContent = "Feels like: " + Math.floor(json.main.feels_like);
         feelsLike.append(feelsLikeValue, degreeIcon2, degree2);
 
         // city
