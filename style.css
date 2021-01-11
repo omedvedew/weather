@@ -6,7 +6,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
+  width: 350px;
   height: 250px;
   background: linear-gradient(to top right, #6482ff, #000096);
   margin: 0 auto;
