@@ -161,7 +161,7 @@ function getValue() {
         let weatherImg = document.querySelector(".weather-img");
         let weatherIconImg = document.createElement("img");
         let weatherIconValue = json.weather[0].icon;
-        let weatherIconUrl = "http://openweathermap.org/img/w/" + weatherIconValue + ".png";
+        let weatherIconUrl = "https://openweathermap.org/img/w/" + weatherIconValue + ".png";
         weatherIconImg.setAttribute("src", weatherIconUrl);
         weatherImg.append(weatherIconImg);
     });
